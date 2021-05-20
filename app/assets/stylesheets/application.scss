@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+ .resim{
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position:center;
+    color: aliceblue;
+    border-radius: 0px !important;
+    margin-top: -30px;
+  }
+  .resim p {
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-top: 150px;
+  }
+  .container_ozellik{
+    width: 100%;
+    height: 300px;
+    background-color: #242E3B;
+    background-size: 100%;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    
+  
+  }
+  .course{
+    width: 100%;
+    height: auto;
+    background-color: #D6A74C;
+    background-size: 100%;
+    padding-bottom: 70px;
+  
+  
+  }
+  .course-card{
+    width: 220px;
+    height: 370px;
+    background-color: #171717;
+    border-radius: 3px;
+  
+  }
+  .buy_bike{
+    width: 100%;
+    height: auto;
+    background-color: #242E3B;
+    background-size: 100%;
+    padding-top: 70px;
+  }
+  .buy_bike_card{
+    background-image: url('motor1.jpg');
+    background-size: cover;
+    background-position:center;
+    width: 300px;
+    height: 370px;
+    background-color: #171717;
+    border-radius: 3px;
+  }
+  .icon{
+    font-size: 25px;
+    color: aliceblue;
+    margin-right: 20px;
+    float: right;
+  }
+  .img_size{
+    width: 300px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 990px) {
+    .container_ozellik{
+      width: 100%;
+      height: 500px;
+      background-color: #242E3B;
+      background-size: 100%;
+    
+    }
+  
+    .img_size{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+     
+    }
+    .div_size{
+     
+      text-align: center;
+      
+    }
+  
+   
+  
+      
+          
+  }
+  @media only screen and (max-width: 560px) {
+  
+    .deneme{
+      margin: auto;
+    width: 50%;
+    
+  
+      
+    }
+    .course{
+      width: 100%;
+      height:auto;
+      background-color: #D6A74C;
+      background-size: 100%;
+    
+    }
+    .card-size{
+      
+        margin: auto;
+        width: 65%;
+        
+        
+      
+    }
+  }
+  
