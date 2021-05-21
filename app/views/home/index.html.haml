@@ -1,10 +1,8 @@
-
 .container_ozellik
   .d-flex.justify-content-center.row
     .col-lg-3
-    
-    
-      =image_tag  "motor.jpg", :class => "img_size mt-4"
+      
+      =image_tag  "motor.jpg", :class => "img_size mt-4",:style => "width: 300px;"
     .ml-3.mt-4.col-lg-3.div_size{:style => "width: 400px; color: aliceblue;"}
       %h1 ABOUT US
       %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, facere.
@@ -20,56 +18,136 @@
   .container.deneme
     %h1
     .row
-      .col-sm
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.course-card
-          %h1.pt-3{:style => "font-size: 30px; color: #D6A74C;"} BEGİNER
-          %i.fal.fa-football-helmet{:style => "color: seashell; font-size: 70px;"}
-          %h1{:style => "font-size: 30px; color: #D6A74C;"} GROUP
-          %p{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %p{:style => "color: #F47122;"} $100
-          %button.btn.btn-outline-secondary{:type => "button"} Secondary
-      .col-sm
+          %h1.pt-3 BEGİNER
+          %i.fal.fa-football-helmet.text-white{:style => "font-size: 70px;"}
+          %h1 GROUP
+          %p.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %p.color_price $100
+          %button.btn.btn-outline-secondary.mb-4{:type => "button"} Secondary
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.course-card
-          %h1.pt-3{:style => "font-size: 30px; color: #D6A74C;"} AMATEUR
-          %i.far.fa-motorcycle{:style => "color: seashell; font-size: 70px;"}
-          %h1{:style => "font-size: 30px; color: #D6A74C;"} GROUP
-          %p{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %p{:style => "color: #F47122;"} $250
-          %button.btn.btn-outline-secondary{:type => "button"} Secondary
-      .col-sm
+          %h1.pt-3 AMATEUR
+          %i.far.fa-motorcycle.text-white{:style => "font-size: 70px;"}
+          %h1 GROUP
+          %p.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %p.color_price $250
+          %button.btn.btn-outline-secondary.mb-4{:type => "button"} Secondary
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.course-card
-          %h1.pt-3{:style => "font-size: 30px; color: #D6A74C;"} PRO
-          %i.far.fa-steering-wheel{:style => "color: seashell; font-size: 70px;"}
-          %h1{:style => "font-size: 30px; color: #D6A74C;"} GROUP
-          %p{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %p{:style => "color: #F47122;"} $400
-          %button.btn.btn-outline-secondary{:type => "button"} Secondary
-      .col-sm
-        .text-center.mt-4.mb-4.course-card
-          %h1.pt-3{:style => "font-size: 30px; color: #D6A74C;"} PERSONAL
-          %i.fal.fa-books{:style => "color: seashell; font-size: 70px;"}
-          %h1{:style => "font-size: 30px; color: #D6A74C;"} LESSON
-          %p{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %p{:style => "color: #F47122;"} $50
-          %button.btn.btn-outline-secondary{:type => "button"} Secondary
+          %h1.pt-3.color_site{:style => "font-size: 30px;"} PRO
+          %i.far.fa-steering-wheel.text-white{:style => "font-size: 70px;"}
+          %h1 GROUP
+          %p.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %p.color_price $400
+          %button.btn.btn-outline-secondary.mb-4{:type => "button"} Secondary
+      .col-sm.d-flex.justify-content-center
+        .text-center.mt-4.course-card
+          %h1.pt-3 PERSONAL
+          %i.fal.fa-books.text-white{:style => "font-size: 70px;"}
+          %h1 LESSON
+          %p.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %p.color_price $50
+          %button.btn.btn-outline-secondary.mb-4{:type => "button"} Secondary
 .buy_bike
-  .container.card-size
+  .container.card-size.text-center
+    %h1.pb-2.text-white YOUR FIRST BIKE
     .row
-      .col-sm
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3{:style => "font-size: 30px; color: #D6A74C;"} KAWASAKİ
-          %p.pt-4.pb-3{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4{:style => "color:#D6A74C; font-size: 50px;"} KX 65
+          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KAWASAKİ
+          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %h1.pb-4.color_site{:style => " font-size: 50px;"} KX 65
           %button.btn.btn-light{:type => "button"} LEARN MORE
-      .col-sm
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3{:style => "font-size: 30px; color: #D6A74C;"} KTM
-          %p.pt-4.pb-3{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4{:style => "color:#D6A74C; font-size: 50px;"} SX 125
+          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KTM
+          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %h1.pb-4.color_site{:style => " font-size: 50px;"} SX 125
           %button.btn.btn-light{:type => "button"} LEARN MORE
-      .col-sm
+      .col-sm.d-flex.justify-content-center
         .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3{:style => "font-size: 30px; color: #D6A74C;"} KAWASAKİ
-          %p.pt-4.pb-3{:style => "color: seashell;"} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4{:style => "color:#D6A74C; font-size: 50px;"} YZ 125
+          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KAWASAKİ
+          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
+          %h1.pb-4.color_site{:style => "font-size: 50px;"} YZ 125
           %button.btn.btn-light{:type => "button"} LEARN MORE
+.student_comment
+  .container
+    %h1.pb-2.text-center.text-white STUDENT REVIEWS
+    .row
+      .col-sm.d-flex.justify-content-center.pt-4
+        .student_card
+          =image_tag  "img_avatar2.png", :class => "avatar mt-2 sol_10px"
+          
+          
+          %i.fal.fa-bacon.ml-2.color_site
+          %p{:style => "width: 330px; float: right;"}
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia facilis, velit aliquam molestiae quam ea. Adipisci quibusdam
+            = succeed "sit" do
+              %br/
+          %p{:style => " width: 150px; float: right;"}
+            %strong Courtney Henry
+      .col-sm.d-flex.justify-content-center.pt-4.pb-4
+        .student_card
+          =image_tag  "img_avatar.png", :class => "avatar mt-2 sol_10px"
+          
+          %i.fal.fa-bacon.ml-2.color_site
+          %p{:style => "width: 330px; float: right;"}
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia facilis, velit aliquam molestiae quam ea. Adipisci quibusdam
+            %br/
+            sit amet consectetur
+          %p{:style => " width: 150px; float: right;"}
+            %strong Albert Flores
+%div
+  .img1
+  .img2
+  .img3
+  .img4
+.Contact_form
+  %h1.pb-4.text-center.text-white STUDENT REVIEWS
+  .container.d-flex.justify-content-center.pt-4
+    .row
+      .col-sm.d-flex.justify-content-center.pr-4
+        %div
+          %div
+            %i.fal.fa-map-marker-alt.color_site{:style => "font-size: 25px;"}
+            %h4.text-warning Adress
+            %p.text-white 1019  Aaron Smith Drive
+          %div
+            %i.fas.fa-phone-alt.color_site{:style => "font-size: 25px;"}
+            %h4.text-warning Phones
+            %p.text-white 717-681-6483
+          %div
+            %i.fal.fa-clock.color_site{:style => "font-size: 25px;"}
+            %h4.text-warning We Are Open
+            %p.text-white Full-time work
+      .col-sm.d-flex.justify-content-center.pl-4
+        %form{:style => "width: 300px;"}
+          .form-group
+            %input#formGroupExampleInput.form-control{:placeholder => "Name", :type => "text"}/
+          .form-group
+            %input#exampleInputEmail1.form-control{"aria-describedby" => "emailHelp", :placeholder => "Email", :type => "email"}/
+          .form-group
+            %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}/
+          .form-group
+            %input#formGroupExampleInput.form-control{:placeholder => "Phone", :type => "text"}/
+          .form-group
+            %textarea#exampleFormControlTextarea1.form-control{:placeholder => "Message", :rows => "3"}
+          %button.btn.btn-primary{:type => "submit"} Submit
+%div
+  %iframe{:allowfullscreen => "", :height => "300", :loading => "lazy", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8505753140967!2d-118.49654358740636!3d34.00980641217543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d74d5ea79b%3A0xcd9a111aced18f4d!2sSanta%20Monica%20%C4%B0skelesi!5e0!3m2!1str!2str!4v1621597274748!5m2!1str!2str", :style => "border:0;", :width => "100%"}
+.social_media
+  .d-flex.justify-content-center
+    %a{:href => ""}
+      %div
+        =image_tag  "drive.png"
+  .d-flex.justify-content-center
+    %div{:style => "border-bottom: 1px solid #D9AA4F; width: 250px;padding-top: 20px;"}
+  .d-flex.justify-content-center{:style => "padding-top: 20px;"}
+    %a{:href => ""}
+      %i.fab.fa-facebook.text-secondary{:style => "font-size: 25px;"}
+    %a{:href => ""}
+      %i.fab.fa-twitter.text-secondary{:style => "font-size: 25px;"}
+    %a{:href => ""}
+      %i.fab.fa-instagram.text-secondary{:style => "font-size: 25px;"}

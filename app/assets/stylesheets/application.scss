@@ -16,124 +16,212 @@
  @import "bootstrap";
 
  .resim{
-    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg');
-    height: 80vh;
-    background-size: cover;
-    background-position:center;
-    color: aliceblue;
-    border-radius: 0px !important;
-    margin-top: -30px;
-  }
-  .resim p {
-    margin: 30px 0;
-    font-size: 30px;
-    line-height: 1.5;
-    padding-top: 150px;
-  }
+  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg');
+  height: 80vh;
+  background-size: cover;
+  background-position:center;
+  color: aliceblue;
+  border-radius: 0px !important;
+  margin-top: -30px;
+}
+
+.resim p {
+  margin: 30px 0;
+  font-size: 30px;
+  line-height: 1.5;
+  padding-top: 150px;
+}
+.container_ozellik{
+  width: 100%;
+  height: 300px;
+  background-color: #242E3B;
+  background-size: 100%;
+  padding-top: 50px;
+  padding-bottom: 300px;
+  
+
+}
+.course{
+  width: 100%;
+  height: auto;
+  background-color: #D6A74C;
+  background-size: 100%;
+  padding-bottom: 70px;
+
+
+}
+.course-card{
+  width: 250px;
+  height: auto;
+  background-color: #171717;
+  border-radius: 3px;
+
+}
+.course-card h1{
+  font-size: 30px;
+  color: #D6A74C;
+
+}
+.buy_bike{
+  width: 100%;
+  height: auto;
+  background-color: #242E3B;
+  background-size: 100%;
+  padding-top: 70px;
+}
+.buy_bike_card{
+  background-image: url('motor1.jpg');
+  background-size: cover;
+  background-position:center;
+  width: 300px;
+  height: 370px;
+  background-color: #171717;
+  border-radius: 3px;
+}
+.student_card{
+  width: 400px;
+  height: 220px;
+  background-color: white;
+  border-radius: 3px;
+  
+
+}
+.student_comment{
+  padding-top: 50px;
+  background-color: #DAAC4E;
+  height: auto;
+ 
+
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+}
+.card-size{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 990px) {
   .container_ozellik{
     width: 100%;
-    height: 300px;
+    height: 500px;
     background-color: #242E3B;
     background-size: 100%;
-    padding-top: 50px;
-    padding-bottom: 300px;
-    
   
+  }
+
+  .img_size{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+  }
+  .div_size{
+   
+    text-align: center;
+    
+  }
+ 
+
+ 
+
+    
+        
+}
+@media only screen and (max-width: 560px) {
+
+  .deneme{
+    margin: auto;
+  width: 50%;
+  
+
+    
   }
   .course{
     width: 100%;
-    height: auto;
+    height:auto;
     background-color: #D6A74C;
     background-size: 100%;
-    padding-bottom: 70px;
-  
   
   }
-  .course-card{
-    width: 220px;
-    height: 370px;
-    background-color: #171717;
-    border-radius: 3px;
-  
-  }
-  .buy_bike{
-    width: 100%;
-    height: auto;
-    background-color: #242E3B;
-    background-size: 100%;
-    padding-top: 70px;
-  }
-  .buy_bike_card{
-    background-image: url('motor1.jpg');
-    background-size: cover;
-    background-position:center;
-    width: 300px;
-    height: 370px;
-    background-color: #171717;
-    border-radius: 3px;
-  }
-  .icon{
-    font-size: 25px;
-    color: aliceblue;
-    margin-right: 20px;
-    float: right;
-  }
-  .img_size{
-    width: 300px;
-  }
-  
-  
-  
-  @media only screen and (max-width: 990px) {
-    .container_ozellik{
-      width: 100%;
-      height: 500px;
-      background-color: #242E3B;
-      background-size: 100%;
-    
-    }
-  
-    .img_size{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-     
-    }
-    .div_size{
-     
-      text-align: center;
-      
-    }
-  
-   
-  
-      
-          
-  }
-  @media only screen and (max-width: 560px) {
-  
-    .deneme{
-      margin: auto;
-    width: 50%;
-    
-  
-      
-    }
-    .course{
-      width: 100%;
-      height:auto;
-      background-color: #D6A74C;
-      background-size: 100%;
-    
-    }
-    .card-size{
-      
-        margin: auto;
-        width: 65%;
-        
-        
-      
-    }
-  }
-  
+ 
+
+}
+.img1{
+  background-image: url('deneme.jpg');
+  height: 30vh;
+  background-size: cover;
+  background-position:center;
+  width: 25%;
+  float: left;
+  filter: grayscale(100%);
+ 
+
+}
+.img2{
+  background-image: url('deneme3.jpg');
+  height: 30vh;
+  background-size: cover;
+  background-position:center;
+  width: 25%;
+  float: left;
+  filter: grayscale(100%);
+ 
+
+}
+.img3{
+  background-image: url('deneme1.jpg');
+  height: 30vh;
+  background-size: cover;
+  background-position:center;
+  width: 25%;
+  float: left;
+  filter: grayscale(100%);
+ 
+
+}
+.img4{
+  background-image: url('deneme2.jpg');
+  height: 30vh;
+  background-size: cover;
+  background-position:center;
+  width: 25%;
+  float: left;
+  filter: grayscale(100%);
+ 
+
+}
+.Contact_form{
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: #242E3B;
+  background-size: 100%;
+}
+.social_media{
+  width: 100%;
+  height: auto;
+  margin-top: -10px;
+  padding-top: 30px;
+  background-color: #171717;
+  background-size: 100%;
+}
+.color_price{
+  color:  #F47122;
+}
+.color_site{
+  color:  #D6A74C;
+}
+.sol_10px{
+margin-left: 10px;
+}
