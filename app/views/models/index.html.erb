@@ -1,0 +1,18 @@
+<h1>Tüm Motorlar</h1>
+<table border="1">
+<tr>
+    <td>Adı</td>
+    <td>işlemler</td>
+</tr>
+    <% @model.each do |model|%>
+    <tr> 
+        <td><%=model.name%></td>
+        <td><%=link_to("Göster",model_path(model.id))%>
+        <%=link_to("Güncelle",edit_model_path(model.id))%>
+        <%= link_to 'Sil', model_path(model.id), method: :delete, data: {:confirm => 'Emin misiniz?'} %></td>
+
+    </tr>
+    <%end%>
+    
+</table>
+<%= link_to "Yeni model ekle",new_model_path%>

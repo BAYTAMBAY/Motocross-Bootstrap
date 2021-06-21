@@ -1,2 +1,18 @@
-<h1>Motorcycles#index</h1>
-<p>Find me in app/views/motorcycles/index.html.erb</p>
+<h1>Tüm Motorlar</h1>
+<table border="1">
+<tr>
+    <td>Adı</td>
+    <td>işlemler</td>
+</tr>
+    <% @motorcycle.each do |motorcycle|%>
+    <tr> 
+        <td><%=motorcycle.model.name%></td>
+        <td><%=link_to("Göster",motorcycle_path(motorcycle.id))%>
+        <%=link_to("Güncelle",edit_motorcycle_path(motorcycle.id))%>
+        <%= link_to 'Sil', motorcycle_path(motorcycle.id), method: :delete, data: {:confirm => 'Emin misiniz?'} %></td>
+
+    </tr>
+    <%end%>
+    
+</table>
+<%= link_to "Yeni motor ekle",new_motorcycle_path%>

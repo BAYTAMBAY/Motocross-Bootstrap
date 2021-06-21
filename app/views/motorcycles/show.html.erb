@@ -1,2 +1,8 @@
-<h1>Motorcycles#show</h1>
-<p>Find me in app/views/motorcycles/show.html.erb</p>
+<h1>Ayrıntılar</h1>
+<%= @motorcycle.model.name %><br>
+<%= @motorcycle.name %><br>
+<%= @motorcycle.description %><br>
+<%= @motorcycle.price %><br>
+<%=image_tag @motorcycle.picture_id, style:"width:150px; height:150px; object-fit:cover "%><br>
+
+<%=link_to "Tümünü Göster",motorcycles_path%>
