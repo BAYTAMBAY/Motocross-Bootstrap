@@ -80,24 +80,17 @@
   .container.card-size.text-center
     %h1.pb-2.text-white YOUR FIRST BIKE
     .row
-      .col-sm.d-flex.justify-content-center
-        .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KAWASAKİ
-          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4.color_site{:style => " font-size: 50px;"} KX 65
-          %button.btn.btn-light{:type => "button"} LEARN MORE
-      .col-sm.d-flex.justify-content-center
-        .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KTM
-          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4.color_site{:style => " font-size: 50px;"} SX 125
-          %button.btn.btn-light{:type => "button"} LEARN MORE
-      .col-sm.d-flex.justify-content-center
-        .text-center.mt-4.buy_bike_card
-          %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"} KAWASAKİ
-          %p.pt-4.pb-3.text-white Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, obcaecati iusto adipisci ex quis iure.
-          %h1.pb-4.color_site{:style => "font-size: 50px;"} YZ 125
-          %button.btn.btn-light{:type => "button"} LEARN MORE
+      - @motorcycle.each do |m|
+        .col-sm.d-flex.justify-content-center
+          .text-center.mt-4.buy_bike_card{:style => "background: url(<%= url_for(m.picture_id) %>) no-repeat;"}
+            %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"}
+              =m.model.name
+            %p.pt-4.pb-3.text-white{:style => "height: 120px;"}
+              =m.description
+            %h1.pb-4.color_site{:style => "font-size: 50px;"}
+              =m.name
+            %button.btn.btn-light{:type => "button"} LEARN MORE
+            
 .student_comment
   .container
     %h1.pb-2.text-center.text-white STUDENT REVIEWS
