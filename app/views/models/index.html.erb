@@ -4,7 +4,7 @@
     <td>Adı</td>
     <td>işlemler</td>
 </tr>
-    <% @model.each do |model|%>
+    <% @models.each do |model|%>
     <tr> 
         <td><%=model.name%></td>
         <td><%=link_to("Göster",model_path(model.id))%>

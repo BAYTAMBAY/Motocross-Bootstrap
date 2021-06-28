@@ -1,4 +1,4 @@
-class MotorcyclesController < ApplicationController
+class Admin::MotorcyclesController < ApplicationController
   def index
     @motorcycle = Motorcycle.all
   end
@@ -14,7 +14,7 @@ class MotorcyclesController < ApplicationController
   def create
     @motorcycle = Motorcycle.new(motorcycle_params)
     if @motorcycle.save
-      redirect_to motorcycles_path
+      redirect_to admin_motorcycles_path
     else
       render :new
     end

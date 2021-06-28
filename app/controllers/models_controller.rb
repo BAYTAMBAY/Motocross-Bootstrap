@@ -1,6 +1,6 @@
 class ModelsController < ApplicationController
   def index
-    @model = Model.all
+    @models = Model.all
   end
 
   def show

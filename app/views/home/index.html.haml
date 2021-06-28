@@ -1,3 +1,4 @@
+
 .resim.text-center
   %nav.container.navbar.navbar-expand-lg.navbar-dark.fixed-top
     %a.navbar-brand{:href => "#"} Navbar
@@ -17,8 +18,10 @@
             %a.dropdown-item{:href => "#"} Another action
             .dropdown-divider
             %a.dropdown-item{:href => "#"} Something else here
-      %i.fab.fa-twitter.icon
-      %i.fab.fa-instagram.icon
+      = link_to destroy_admin_session_path,method: :delete do      
+        %i.fab.fa-twitter.icon
+      = link_to new_admin_session_path do  
+        %i.fab.fa-instagram.icon
       %i.fab.fa-facebook.icon
   %p Lorem ipsum dolor sit amet.
   %h1 MOTOCROSS NUMBER ONE
@@ -82,7 +85,7 @@
     .row
       - @motorcycle.each do |m|
         .col-sm.d-flex.justify-content-center
-          .text-center.mt-4.buy_bike_card{:style => "background: url(<%= url_for(m.picture_id) %>) no-repeat;"}
+          .text-center.mt-4.buy_bike_card{:style => "background: url( #{ url_for(m.picture_id)}) no-repeat;"}
             %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"}
               =m.model.name
             %p.pt-4.pb-3.text-white{:style => "height: 120px;"}

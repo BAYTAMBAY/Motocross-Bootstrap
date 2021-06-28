@@ -1,0 +1,18 @@
+<h1>Tüm Motorlar</h1>
+<table border="1">
+<tr>
+    <td>Adı</td>
+    <td>işlemler</td>
+</tr>
+    <% @motorcycle.each do |motorcycle|%>
+    <tr> 
+        <td><%=motorcycle.model.name%></td>
+        <td><%=link_to("Göster",admin_motorcycle_path(motorcycle.id))%>
+        <%=link_to("Güncelle",edit_admin_motorcycle_path(motorcycle.id))%>
+        <%= link_to 'Sil', admin_motorcycle_path(motorcycle.id), method: :delete, data: {:confirm => 'Emin misiniz?'} %></td>
+
+    </tr>
+    <%end%>
+    
+</table>
+<%= link_to "Yeni motor ekle",new_admin_motorcycle_path%>
