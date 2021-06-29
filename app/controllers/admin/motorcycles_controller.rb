@@ -35,7 +35,7 @@ class Admin::MotorcyclesController < ApplicationController
   def destroy
     @motorcycle=Motorcycle.find(params[:id])
     @motorcycle.destroy
-    redirect_to motorcycles_path
+    redirect_to admin_motorcycles_path
   end
 
   private
