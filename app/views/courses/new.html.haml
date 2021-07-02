@@ -1,0 +1,9 @@
+%h1
+    Kurs Ekle 
+=form_for @course do |f|
+    Açıklama
+    =f.text_field :description
+    Fiyat
+    =f.text_field :price
+    =f.submit "Ekle"
+    

@@ -1,0 +1,16 @@
+%h1 Kurs istekleri
+%table{:border => "1"}
+  %tr
+    %td Kullanıcı e-mail
+    %td Kurs
+    %td işlemler
+
+  - @wants.each do |want|
+    %tr
+      %td= want.user.email
+      %td= want.course.description
+      %td
+        -if want.permission == 0
+          =link_to "Onayla",   admin_wants_permit_path(want.id)
+        -else
+          Onaylandı
