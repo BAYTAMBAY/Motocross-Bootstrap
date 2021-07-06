@@ -1,0 +1,13 @@
+%h1 Tüm kurslar
+%table{:border => "1"}
+  %tr
+    %td Adı
+    %td işlemler
+  - @course.each do |course|
+    %tr
+      %td= course.description
+      %td
+        = link_to("Göster",course_path(course.id))
+        = link_to("Güncelle",edit_course_path(course.id))
+        = link_to 'Sil', course_path(course.id), method: :delete, data: {:confirm => 'Emin misiniz?'}
+= link_to "Yeni kurs ekle",new_course_path

@@ -18,11 +18,23 @@
             %a.dropdown-item{:href => "#"} Another action
             .dropdown-divider
             %a.dropdown-item{:href => "#"} Something else here
-      = link_to destroy_admin_session_path,method: :delete do      
-        %i.fab.fa-twitter.icon
-      = link_to new_admin_session_path do  
-        %i.fab.fa-instagram.icon
-      %i.fab.fa-facebook.icon
+      - if admin_signed_in?
+        = link_to destroy_admin_session_path,method: :delete do 
+          %li
+            Çıkış yap 
+      - else
+        = link_to new_admin_session_path do
+          %li
+            Admin 
+      - if user_signed_in?
+        = link_to destroy_user_session_path,method: :delete do 
+          %li
+            Çıkış yap 
+      - else
+        = link_to new_user_session_path do
+          %li
+            User
+        
   %p Lorem ipsum dolor sit amet.
   %h1 MOTOCROSS NUMBER ONE
   %h3 Lorem ipsum dolor sit amet consectetur.
@@ -54,10 +66,10 @@
             %i.fal.fa-football-helmet.text-white{:style => "font-size: 70px;"}
             %h1 GROUP
             %p.text-white
-              =course.description
+              = truncate(course.description, length: 90)
             %p.color_price
               =course.price
-            =link_to "Satın al",courses_want_path(course.id),class:"btn btn-outline-secondary mb-4"
+            =link_to "İncele",course_path(course.id),class:"btn btn-outline-secondary mb-4"
 .buy_bike
   .container.card-size.text-center
     %h1.pb-2.text-white YOUR FIRST BIKE

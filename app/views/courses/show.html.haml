@@ -1,0 +1,8 @@
+.text-center.container
+  %h1 Ayrıntılar
+  = @course.description
+  %br/
+  %h1{:style => "color: red; font-size:30px;"}
+    = @course.price
+  %br/
+  =link_to "Satın al",courses_want_path(@course.id),class:"btn btn-outline-secondary mb-4"

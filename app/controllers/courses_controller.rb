@@ -40,8 +40,14 @@ class CoursesController < ApplicationController
     end
     
     def want
+      if user_signed_in?
         Want.create(user_id: current_user.id, course_id: params[:id], permission: 0 )
         redirect_to root_path
+      else
+        
+        redirect_to user_session_path,{message: 'Error Subscribing!' }
+        
+      end
 
     end
     private
