@@ -80,7 +80,7 @@
             %h1.pt-3.pb-3.color_site{:style => "font-size: 30px;"}
               =m.model.name
             %p.pt-4.pb-3.text-white{:style => "height: 120px;"}
-              =m.description
+              = truncate(m.description, length: 90)
             %h1.pb-4.color_site{:style => "font-size: 30px;"}
               =m.name
             %p.color_price{:style => "font-size: 20px; font-weight: normal;"}

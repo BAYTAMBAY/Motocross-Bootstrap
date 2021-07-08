@@ -3,15 +3,21 @@
   %tr
     %td Kurs içerigi
     %td Kullanıcı e-mail
-    %td işlemler
+    %td Onayla
+    %td İptal et
 
   - @wants.each do |want|
     %tr
     
-      %td=want.course.description
+      %td
       %td= want.user.email
       %td
         -if want.permission == 0
           =link_to "Onayla",   admin_wants_permit_path(want.id)
         -else
           Onaylandı
+      %td
+        -if want.permission == 1
+          =link_to "İptal Et",   admin_wants_nopermit_path(want.id)
+        -else
+          İptal edildi

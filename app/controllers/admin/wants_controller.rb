@@ -8,4 +8,10 @@ class Admin::WantsController < ApplicationController
         @want.save!
         redirect_to admin_wants_path
     end
+    def nopermit
+        @want = Want.find(params[:id])
+        @want.permission = 0
+        @want.save!
+        redirect_to admin_wants_path
+    end
 end
