@@ -9,7 +9,7 @@
         <td><%=motorcycle.model.name%></td>
         <td><%=link_to("Göster",admin_motorcycle_path(motorcycle.id))%>
         <%=link_to("Güncelle",edit_admin_motorcycle_path(motorcycle.id))%>
-        <%= link_to 'Sil', admin_motorcycle_path(motorcycle.id), method: :delete, data: {:confirm => 'Emin misiniz?'} %></td>
+        <%= link_to 'Sil', admin_motorcycles_path(motorcycle.id), method: :delete, data: {:confirm => 'Emin misiniz?'} %></td>
 
     </tr>
     <%end%>

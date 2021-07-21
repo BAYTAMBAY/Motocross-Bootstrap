@@ -5,7 +5,7 @@ class Admin::Admins::ConfirmationsController < Devise::ConfirmationsController
   # def new
   #   super
   # end
-
+  layout 'admin'
   # POST /resource/confirmation
   # def create
   #   super

@@ -1,4 +1,5 @@
 class Admin::MotorcyclesController < ApplicationController
+
   def index
     @motorcycle = Motorcycle.all
   end
@@ -23,7 +24,7 @@ class Admin::MotorcyclesController < ApplicationController
   def update
     @motorcycle = Motorcycle.find(params[:id])
     if @motorcycle.update(motorcycle_params)
-      redirect_to motorcycles_path
+      redirect_to admin_motorcycles_path
     else
       render :update
     end
