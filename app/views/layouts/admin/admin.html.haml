@@ -4,14 +4,14 @@
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Simple Sidebar - Start Bootstrap Template
+    %title Admin Panel
 
   %body
   
     #wrapper.d-flex
       / Sidebar
       #sidebar-wrapper.border-end.bg-white
-        .sidebar-heading.border-bottom.bg-light Start Bootstrap
+        .sidebar-heading.border-bottom.bg-light Admin Panel
         .list-group.list-group-flush
           %a= link_to "Motorcycles",   admin_motorcycles_path, class: "list-group-item list-group-item-action list-group-item-light p-3"
           %a= link_to "Wants",   admin_wants_url, class: "list-group-item list-group-item-action list-group-item-light p-3"
@@ -72,7 +72,7 @@
                 - @wants.each do |want|
                   %tr
                   
-                    %td
+                    %td= want.course.description
                     %td= want.user.email
                     %td
                       -if want.permission == 0

@@ -136,20 +136,22 @@
           %div
             %i.fal.fa-clock.color_site{:style => "font-size: 25px;"}
             %h4.text-warning We Are Open
-            %p.text-white Full-time work
+            %p.text-white Full-Time Work
       .col-sm.d-flex.justify-content-center.pl-4
-        %form{:style => "width: 300px;"}
-          .form-group
-            %input#formGroupExampleInput.form-control{:placeholder => "Name", :type => "text"}/
-          .form-group
-            %input#exampleInputEmail1.form-control.mt-2{"aria-describedby" => "emailHelp", :placeholder => "Email", :type => "email"}/
-          .form-group
-            %input#exampleInputPassword1.form-control.mt-2{:placeholder => "Password", :type => "password"}/
-          .form-group
-            %input#formGroupExampleInput.form-control.mt-2{:placeholder => "Phone", :type => "text"}/
-          .form-group
-            %textarea#exampleFormControlTextarea1.form-control.mt-2{:placeholder => "Message", :rows => "3"}
-          %button.btn.btn-primary.mt-1{:type => "submit"} Submit
+        = render 'form'
+
+
+          -# .form-group
+          -#   %input#formGroupExampleInput.form-control{:placeholder => "Name", :type => "text"}
+          -# .form-group
+          -#   %input#formGroupExampleInput.form-control.mt-2{:placeholder => "Surname", :type => "surname"}
+          -# .form-group
+          -#   %input#exampleInputEmail1.form-control.mt-2{"aria-describedby" => "emailHelp", :placeholder => "Email", :type => "email"}
+          -# .form-group
+          -#   %input#formGroupExampleInput.form-control.mt-2{:placeholder => "Phone", :type => "text"}
+          -# .form-group
+          -#   %textarea#exampleFormControlTextarea1.form-control.mt-2{:placeholder => "Message", :rows => "3"}
+          -# %button.btn.btn-primary.mt-1{:type => "submit"} Submit
 %div
   %iframe{:allowfullscreen => "", :height => "300", :loading => "lazy", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8505753140967!2d-118.49654358740636!3d34.00980641217543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d74d5ea79b%3A0xcd9a111aced18f4d!2sSanta%20Monica%20%C4%B0skelesi!5e0!3m2!1str!2str!4v1621597274748!5m2!1str!2str", :style => "border:0;", :width => "100%"}
 .social_media

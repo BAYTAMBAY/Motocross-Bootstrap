@@ -1,0 +1,7 @@
+= simple_form_for :request,url: create_request_path do |f|
+  = f.input :name, required: true , placeholder: "Ad Soyad"
+  = f.input :email, required: true,  placeholder: "E mail"
+  = f.input :message, required: true, placeholder: "Yorumunuz"
+  = f.input :phone_number, required: true, placeholder: "Yorumunuz"
+  = f.submit 'Yorum Yap',class: 'button center'
+  
