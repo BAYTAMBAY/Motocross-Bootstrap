@@ -5,18 +5,18 @@
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Simple Sidebar - Start Bootstrap Template
+    %title Admin panel 
 
   %body
   
     #wrapper.d-flex
       / Sidebar
       #sidebar-wrapper.border-end.bg-white
-        .sidebar-heading.border-bottom.bg-light Start Bootstrap
+        .sidebar-heading.border-bottom.bg-light Admin 
         .list-group.list-group-flush
           %a= link_to "Motorcycles",   admin_motorcycles_path, class: "list-group-item list-group-item-action list-group-item-light p-3"
           %a= link_to "Wants",   admin_wants_url, class: "list-group-item list-group-item-action list-group-item-light p-3"
-          %a.list-group-item.list-group-item-action.list-group-item-light.p-3{:href => "#!"} Overview
+          %a= link_to "Requests",   admin_requests_url, class: "list-group-item list-group-item-action list-group-item-light p-3"
           %a.list-group-item.list-group-item-action.list-group-item-light.p-3{:href => "#!"} Events
           %a.list-group-item.list-group-item-action.list-group-item-light.p-3{:href => "#!"} Profile
           %a.list-group-item.list-group-item-action.list-group-item-light.p-3{:href => "#!"} Status

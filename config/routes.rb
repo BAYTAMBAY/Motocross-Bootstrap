@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :requests
+  
   devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords'}
   get 'courses/:id/want',to:"courses#want",as: "courses_want"
   resources :models
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root to: 'admins#index',as: "admins"
     resources :wants
-    
+    resources :requests
     resources :motorcycles
     
 

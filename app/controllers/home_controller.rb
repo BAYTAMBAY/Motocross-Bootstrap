@@ -4,8 +4,6 @@ class HomeController < ApplicationController
     @motorcycle = Motorcycle.all
     @courses = Course.all
     
-
-    
   end
   def create_request
     

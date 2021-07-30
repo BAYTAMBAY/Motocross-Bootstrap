@@ -15,5 +15,5 @@ class Admin::WantsController < ApplicationController
         @want.save!
         redirect_to admin_wants_path
     end
-    layout 'admin/admin'
+    layout 'admin/application'
 end

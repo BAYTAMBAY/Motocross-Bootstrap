@@ -1,0 +1,13 @@
+%h1 Tüm kurslar
+%table{:border => "1"}
+  %tr
+    %td Adı
+    %td Soyadı
+    %td Email
+    %td Email
+  - @request.each do |request|
+    %tr
+      %td= request.name
+      %td= request.surname
+      %td= request.email
+      %td= link_to("Göster",admin_request_path(request.id))
