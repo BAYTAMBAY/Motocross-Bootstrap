@@ -6,7 +6,6 @@ class CreateRequests < ActiveRecord::Migration[6.1]
       t.string :email
       t.string :phone_number
       t.string :message
-
       t.timestamps
     end
   end
