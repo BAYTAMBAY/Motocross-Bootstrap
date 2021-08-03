@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'courses/:id/want',to:"courses#want",as: "courses_want"
  
   resources :courses
-  
+ 
   
   root to: 'home#index'
   post "create_request",to:"home#create_request"
