@@ -1,0 +1,5 @@
+%h1 Model ekle
+= form_for @model do|f|
+  Model #{f.text_field :name}
+  %br/
+  = f.submit 'Ekle'

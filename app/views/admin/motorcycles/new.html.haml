@@ -1,0 +1,11 @@
+%h1 Motor ekle
+= form_for [:admin, @motorcycle] do|f|
+  Markası: #{f.collection_select :model_id, Model.all, :id,:name}
+  %br/
+  Modeli: #{f.text_field :name}
+  %br/
+  Açıklama #{f.text_field :description}
+  %br/
+  Fiyat #{f.text_field :price}
+  %br/
+  resim ekle: #{f.file_field :picture_id, required: true}#{f.submit 'Gönder'}
