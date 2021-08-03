@@ -19,7 +19,6 @@ class CoursesController < ApplicationController
           render :new
         end
     end
-
     def update
         @course = Course.find(params[:id])
         if @course.update(course_params)

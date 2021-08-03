@@ -1,4 +1,4 @@
-class ModelsController < ApplicationController
+class Admin::ModelsController < ApplicationController
   def index
     @models = Model.all
   end
@@ -14,7 +14,7 @@ class ModelsController < ApplicationController
   def create
     @model = Model.new(model_params)
     if @model.save
-      redirect_to models_path
+      redirect_to admin_models_path
     else
       render :new
     end
@@ -23,7 +23,7 @@ class ModelsController < ApplicationController
   def update
     @model = Model.find(params[:id])
     if @model.update(model_params)
-      redirect_to models_path
+      redirect_to admin_models_path
     else
       render :update
     end
@@ -35,7 +35,7 @@ class ModelsController < ApplicationController
   def destroy
     @model=Model.find(params[:id])
     @model.destroy
-    redirect_to models_path
+    redirect_to admin_models_path
   end
   
   private
@@ -43,4 +43,5 @@ class ModelsController < ApplicationController
   def model_params
     params.require(:model).permit(:name)
   end
+  layout 'admin/application'
 end

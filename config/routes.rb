@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords'}
   get 'courses/:id/want',to:"courses#want",as: "courses_want"
-  resources :models
+ 
   resources :courses
   
   
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     resources :wants
     resources :requests
     resources :motorcycles
+    resources :models
     
 
   end

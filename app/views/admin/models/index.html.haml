@@ -1,0 +1,13 @@
+%h1 Tüm Modeller
+%table{:border => "1"}
+  %tr
+    %td Adı
+    %td işlemler
+  - @models.each do |model|
+    %tr
+      %td= model.name
+      %td
+        = link_to("Göster",admin_model_path(model.id))
+        = link_to("Güncelle",edit_admin_model_path(model.id))
+        = link_to 'Sil', admin_model_path(model.id), method: :delete, data: {:confirm => 'Emin misiniz?'}
+= link_to "Yeni model ekle",new_admin_model_path
