@@ -1,4 +1,4 @@
-class Admin::MotorcyclesController < ApplicationController
+class Admin::MotorcyclesController < AdminController
 
   def index
     @motorcycle = Motorcycle.all
@@ -44,5 +44,5 @@ class Admin::MotorcyclesController < ApplicationController
   def motorcycle_params
     params.require(:motorcycle).permit(:name, :description, :price,:picture_id,:model_id)
   end
-  layout 'admin/application'
+
 end

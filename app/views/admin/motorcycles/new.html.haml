@@ -2,7 +2,7 @@
 = form_for [:admin, @motorcycle] do|f|
   Markası: #{f.collection_select :model_id, Model.all, :id,:name}
   %br/
-  Modeli: #{f.text_field :name}
+  Modeli: #{f.text_field :name,required: true}
   %br/
   Açıklama #{f.text_field :description}
   %br/

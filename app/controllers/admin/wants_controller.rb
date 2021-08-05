@@ -1,4 +1,4 @@
-class Admin::WantsController < ApplicationController
+class Admin::WantsController < AdminController
     
     def index
         @wants = Want.all

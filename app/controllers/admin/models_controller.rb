@@ -1,4 +1,4 @@
-class Admin::ModelsController < ApplicationController
+class Admin::ModelsController < AdminController
   def index
     @models = Model.all
   end
@@ -33,6 +33,7 @@ class Admin::ModelsController < ApplicationController
   end
 
   def destroy
+
     @model=Model.find(params[:id])
     @model.destroy
     redirect_to admin_models_path
@@ -43,5 +44,5 @@ class Admin::ModelsController < ApplicationController
   def model_params
     params.require(:model).permit(:name)
   end
-  layout 'admin/application'
+
 end
