@@ -1,5 +1,5 @@
 %h1 Tüm Motorlar
-%table{:border => "1"}
+%table{:border => "1",class: "table table-bordered table-dark"}
   %tr
     %td Adı
     %td işlemler
@@ -7,7 +7,7 @@
     %tr
       %td= motorcycle.model.name
       %td
-        = link_to("Göster",admin_motorcycle_path(motorcycle.id))
-        = link_to("Güncelle",edit_admin_motorcycle_path(motorcycle.id))
-        = link_to 'Sil', admin_motorcycles_path(motorcycle.id), method: :delete, data: {:confirm => 'Emin misiniz?'}
-= link_to "Yeni motor ekle",new_admin_motorcycle_path
+        = link_to("Göster",admin_motorcycle_path(motorcycle.id), class: "btn btn-primary")
+        = link_to("Güncelle",edit_admin_motorcycle_path(motorcycle.id), class: "btn btn-primary")
+        = link_to 'Sil', admin_motorcycles_path(motorcycle.id), class: "btn btn-danger", method: :delete, data: {:confirm => 'Emin misiniz?'}
+= link_to "Yeni motor ekle",new_admin_motorcycle_path, class: "btn btn-primary"

@@ -1,11 +1,13 @@
-%h1 Motor ekle
+%h1 Motor Ekle
 = form_for [:admin, @motorcycle] do|f|
-  Markası: #{f.collection_select :model_id, Model.all, :id,:name}
+  Markası: #{f.collection_select :model_id, Model.all, :id, :name, class:"form-select"}
   %br/
-  Modeli: #{f.text_field :name,required: true}
+  Modeli: #{f.text_field :name,required: true, class: "form-control"}
   %br/
-  Açıklama #{f.text_field :description}
+  Açıklama #{f.text_field :description, class: "form-control"}
   %br/
-  Fiyat #{f.text_field :price}
+  Fiyat #{f.text_field :price, class: "form-control"}
   %br/
-  resim ekle: #{f.file_field :picture_id, required: true}#{f.submit 'Gönder'}
+  Resim Ekle: #{f.file_field :picture_id, required: true}
+  %br/
+  #{f.submit 'Gönder', class: "btn btn-primary"}
