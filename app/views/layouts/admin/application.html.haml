@@ -14,7 +14,7 @@
     #wrapper.d-flex
       / Sidebar
       #sidebar-wrapper.border-end.bg-white
-        .sidebar-heading.border-bottom.bg-light Admin 
+        .sidebar-heading.border-bottom.bg-light Admin Panel 
         .list-group.list-group-flush
           %a= link_to "Motorcycles",   admin_motorcycles_path, class: "list-group-item list-group-item-action list-group-item-light p-3"
           %a= link_to "Wants",   admin_wants_url, class: "list-group-item list-group-item-action list-group-item-light p-3"
@@ -44,7 +44,9 @@
         / Top navigation
         %nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom
           .container-fluid
-            %button#sidebarToggle.btn.btn-primary Toggle Menu
+           
+            %svg.bi.bi-list#sidebarToggle{:fill => "currentColor", :height => "30", :viewbox => "0 0 16 16", :width => "30", :xmlns => "http://www.w3.org/2000/svg"}
+              %path{:d => "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z", "fill-rule" => "evenodd"}
             %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", :type => "button"}
               %span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
