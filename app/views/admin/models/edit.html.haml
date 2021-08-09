@@ -1,5 +1,5 @@
 %h1 Model ekle
 = form_for [:admin, @model] do|f|
-  Model #{f.text_field :name}
+  #{f.text_field :name, class: "form-control"}
   %br/
-  = f.submit 'Ekle'
+  = f.submit 'Ekle', class: "btn btn-primary"

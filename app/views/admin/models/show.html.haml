@@ -1,3 +1,13 @@
-%h1 Ayrıntılar
-= @model.name
-= link_to "Tümünü Göster",admin_models_path
+%table{:border => "1",class: "table table-bordered table-dark"}
+  %tr
+    %td Ayrıntılar
+    %td işlemler
+    
+  %tr
+    %td= @model.name
+    %td= link_to "Tümünü Göster",admin_models_path, class: "btn btn-primary mt3"
+    
+
+
+
+
