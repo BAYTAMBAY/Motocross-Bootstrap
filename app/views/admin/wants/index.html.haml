@@ -1,5 +1,5 @@
 %h1 Kurs istekleri
-%table{:border => "1"}
+%table{:border => "1",class: "table table-bordered table-dark"}
   %tr
     %td Kurs içerigi
     %td Kullanıcı e-mail
@@ -13,11 +13,11 @@
       %td= want.user.email
       %td
         -if want.permission == 0
-          =link_to "Onayla",   admin_wants_permit_path(want.id)
+          =link_to "Onayla", admin_wants_permit_path(want.id), class: "btn btn-primary"
         -else
           Onaylandı
       %td
         -if want.permission == 1
-          =link_to "İptal Et",   admin_wants_nopermit_path(want.id)
+          =link_to "İptal Et", admin_wants_nopermit_path(want.id), class: "btn btn-danger"
         -else
           İptal edildi
