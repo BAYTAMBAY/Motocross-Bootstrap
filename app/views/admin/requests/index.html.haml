@@ -1,5 +1,5 @@
 %h1 Tüm Mail İstekleri
-%table{:border => "1"}
+%table{:border => "1",class: "table table-bordered table-dark"}
   %tr
     %td Adı
     %td Soyadı
@@ -10,4 +10,4 @@
       %td= request.name
       %td= request.surname
       %td= request.email
-      %td= link_to("Göster",admin_request_path(request.id))
+      %td= link_to("Göster",admin_request_path(request.id), class: "btn btn-primary")

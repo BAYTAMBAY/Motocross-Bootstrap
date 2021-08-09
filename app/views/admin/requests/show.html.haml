@@ -1,14 +1,15 @@
-%h1 Ayrıntılar
-= @request.name
-%br/
-= @request.surname
-%br/
-= @request.email
-%br/
-= @request.phone_number
-%br/
-= @request.message
-%br/
+%table{:border => "1",class: "table table-striped"}
+  %tr
+    %td İsim
+    %td Soyisim
+    %td Email
+    %td Telefon Numarası
+    %td Mesaj
+  %tr
+    %td= @request.name
+    %td= @request.surname
+    %td= @request.email
+    %td= @request.phone_number
+    %td= @request.message
+= link_to "Tümünü Göster",admin_requests_path, class: "btn btn-primary"
 
-
-= link_to "Tümünü Göster",admin_requests_path
