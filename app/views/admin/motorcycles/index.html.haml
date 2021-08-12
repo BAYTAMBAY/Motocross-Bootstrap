@@ -9,5 +9,11 @@
       %td
         = link_to("Göster",admin_motorcycle_path(motorcycle.id), class: "btn btn-primary")
         = link_to("Güncelle",edit_admin_motorcycle_path(motorcycle.id), class: "btn btn-primary")
-        = link_to 'Sil', admin_motorcycles_path(motorcycle.id), class: "btn btn-danger", method: :delete, data: {:confirm => 'Emin misiniz?'}
+        %button.btn.btn-primary{:href => "#", :onclick => "mydelete('#{motorcycle.id}')",:title => "Sil",type:"button"}
 = link_to "Yeni motor ekle",new_admin_motorcycle_path, class: "btn btn-primary"
+
+:javascript
+  function mydelete(id){
+    alert("siliniyor")
+    window.top.location.href = '/admin/motorcycles/destroy_motor?id='+id+'';
+  } 

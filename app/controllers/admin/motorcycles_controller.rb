@@ -38,6 +38,11 @@ class Admin::MotorcyclesController < AdminController
     @motorcycle.destroy
     redirect_to admin_motorcycles_path
   end
+  def destroy_motor
+    @motorcycle=Motorcycle.find(params[:id])
+    @motorcycle.destroy
+    redirect_to admin_motorcycles_path
+  end
 
   private
 

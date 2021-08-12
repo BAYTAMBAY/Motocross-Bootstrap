@@ -18,7 +18,9 @@ Rails.application.routes.draw do
     root to: 'admins#index',as: "admins"
     resources :wants
     resources :requests
-    resources :motorcycles
+    resources :motorcycles do 
+      get :destroy_motor, on: :collection
+    end
     resources :models
     
 
